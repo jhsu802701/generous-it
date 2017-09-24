@@ -6,7 +6,7 @@ class StaticPagesTest < ActionDispatch::IntegrationTest
     assert page.has_css?('title', text: full_title(''), visible: false)
     assert page.has_css?('h1', text: 'Home')
     assert page.has_text?('Welcome to Generous IT')
-    assert page.has_css?('small', text: 'Generous IT by Somebody')
+    assert page.has_css?('small', text: 'Generous IT')
   end
 
   test 'about page has expected content' do
@@ -14,15 +14,20 @@ class StaticPagesTest < ActionDispatch::IntegrationTest
     assert page.has_css?('title', text: full_title('About'), visible: false)
     assert page.has_css?('h1', text: 'About')
     assert page.has_text?('Describe your site here.')
-    assert page.has_css?('small', text: 'Generous IT by Somebody')
+    assert page.has_css?('small', text: 'Generous IT')
   end
 
   test 'contact page has expected content' do
     visit contact_path
     assert page.has_css?('title', text: full_title('Contact'), visible: false)
     assert page.has_css?('h1', text: 'Contact')
-    assert page.has_text?('rubyist@jasonhsu.com')
-    assert page.has_css?('small', text: 'Generous IT by Somebody')
+    assert page.has_text?('admin@generousit.org')
+    assert page.has_text?('612-567-3883')
+    assert page.has_text?('Frogtown')
+    assert page.has_text?('Saint Paul')
+    assert page.has_text?('https://www.facebook.com/generousit')
+    assert page.has_text?('https://twitter.com/generous_IT')
+    assert page.has_css?('small', text: 'Generous IT')
   end
 
   test 'home page provides access to the about page' do
