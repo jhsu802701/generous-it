@@ -1,11 +1,11 @@
-# Generous IT
+# generous IT
 
 [![CircleCI](https://circleci.com/gh/jhsu802701/generous-it.svg?style=svg)](https://circleci.com/gh/jhsu802701/generous-it)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jhsu802701/generous-it.svg)](https://gemnasium.com/github.com/jhsu802701/generous-it)
 [![security](https://hakiri.io/github/jhsu802701/generous-it/master.svg)](https://hakiri.io/github/jhsu802701/generous-it/master)
 [![Code Climate](https://codeclimate.com/github/jhsu802701/generous-it/badges/gpa.svg)](https://codeclimate.com/github/jhsu802701/generous-it)
 
-Welcome to Generous IT!
+Welcome to generous IT!
 
 ## How was this app created?
 This Rails app was created with the 
